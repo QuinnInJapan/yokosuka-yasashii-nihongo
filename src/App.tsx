@@ -265,12 +265,13 @@ export function App() {
 
   return (
     <div className="app">
+      <header className="workspace-masthead">
+        <h1 className="title">やさしい日本語 前例リファレンス</h1>
+        <p className="subtitle">公的資料にある書き換え例を検索し、前例にもとづいて判断するための参照ツールです。</p>
+      </header>
       <main>
         <aside className="search-panel" aria-label="検索">
-          <header className="app-intro">
-            <h1 className="title">やさしい日本語 前例リファレンス</h1>
-            <p className="subtitle">公的資料にある書き換え例を検索し、前例にもとづいて判断するための参照ツールです。</p>
-          </header>
+          <div className="panel-label">検索条件</div>
           <div className="search-row">
             <input
               id="query"

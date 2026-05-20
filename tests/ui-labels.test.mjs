@@ -62,4 +62,6 @@ test("search interface stays compact in lower-resolution viewports", async () =>
   assert.match(styles, /\.query\s*{[^}]*font-size:\s*16px/s);
   assert.match(styles, /\.query\s*{[^}]*padding:\s*8px 11px/s);
   assert.match(appSource, /<aside className="search-panel"/);
+  assert.match(appSource, /<header className="workspace-masthead"/);
+  assert.match(appSource, /<div className="panel-label">検索条件<\/div>/);
 });
