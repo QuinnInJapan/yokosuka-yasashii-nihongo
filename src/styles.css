@@ -1,6 +1,7 @@
 :root {
   color-scheme: light;
   font-family: "Yu Gothic", "Meiryo", system-ui, sans-serif;
+  font-size: 14px;
   --ink: #162127;
   --muted: #607179;
   --quiet: #819096;
@@ -29,6 +30,7 @@ body {
   color: var(--ink);
   background: #eef3f1;
   overflow: hidden;
+  font-size: 14px;
 }
 
 html,
@@ -44,23 +46,21 @@ select {
 }
 
 .app {
-  display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
   height: 100%;
   width: min(1280px, 100%);
   margin: 0 auto;
-  padding: 30px 28px 28px;
+  padding: 18px 22px;
 }
 
-.app > header {
+.app-intro {
   border-bottom: 1px solid var(--line);
-  margin-bottom: 18px;
-  padding-bottom: 16px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
 }
 
 .title {
-  margin: 0 0 7px;
-  font-size: 28px;
+  margin: 0 0 4px;
+  font-size: 22px;
   line-height: 1.25;
   letter-spacing: 0;
 }
@@ -68,12 +68,15 @@ select {
 .subtitle {
   margin: 0;
   color: var(--muted);
-  line-height: 1.7;
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 main {
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 18px;
+  height: 100%;
   min-height: 0;
 }
 
@@ -87,13 +90,15 @@ main {
 }
 
 .search-panel {
-  padding: 18px 18px 16px;
+  padding: 12px;
+  align-self: start;
+  max-height: 100%;
+  overflow: auto;
 }
 
 .search-row {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 12px;
+  gap: 8px;
 }
 
 .query {
@@ -101,8 +106,8 @@ main {
   border: 2px solid var(--line-strong);
   border-radius: var(--radius);
   background: var(--field);
-  padding: 12px 14px;
-  font-size: 20px;
+  padding: 8px 11px;
+  font-size: 16px;
 }
 
 .query:focus {
@@ -123,7 +128,7 @@ main {
   border-radius: var(--radius);
   background: var(--paper);
   color: var(--ink);
-  padding: 8px 12px;
+  padding: 6px 10px;
   cursor: pointer;
 }
 
@@ -134,28 +139,28 @@ main {
 
 .filters,
 .summary {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 14px;
+  display: grid;
+  gap: 7px;
 }
 
 .filters {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .filter {
-  max-width: 220px;
+  width: 100%;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--panel);
-  padding: 7px 10px;
+  padding: 5px 8px;
   color: var(--ink);
+  font-size: 13px;
 }
 
 .summary {
-  margin-top: 12px;
+  margin-top: 9px;
   border-top: 1px solid var(--line);
-  padding-top: 12px;
+  padding-top: 8px;
   color: var(--muted);
   font-size: 12px;
 }
@@ -165,10 +170,9 @@ main {
 }
 
 .evidence-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 12px;
+  display: grid;
+  gap: 7px;
+  margin-top: 9px;
 }
 
 .evidence-nav a {
@@ -176,8 +180,9 @@ main {
   border-radius: var(--radius);
   background: var(--panel);
   color: var(--ink);
-  padding: 7px 10px 8px;
+  padding: 5px 8px 6px;
   text-decoration: none;
+  font-size: 13px;
 }
 
 .evidence-nav a:hover {
@@ -189,10 +194,9 @@ main {
   min-height: 0;
   overflow: auto;
   display: grid;
-  gap: 28px;
-  border-top: 3px solid var(--line-strong);
-  margin-top: 16px;
-  padding: 18px 4px 18px 0;
+  gap: 20px;
+  border-left: 3px solid var(--line-strong);
+  padding: 0 4px 14px 18px;
 }
 
 #term-section,
@@ -201,17 +205,17 @@ main {
 }
 
 .section-title {
-  margin: 0 0 12px;
+  margin: 0 0 9px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
 }
 
 .section-title::before {
   display: block;
-  width: 38px;
+  width: 32px;
   height: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   background: var(--line-strong);
   content: "";
 }
@@ -226,15 +230,15 @@ main {
 .card,
 .sentence-card,
 .sentence-group-card {
-  margin-bottom: 10px;
-  padding: 16px;
+  margin-bottom: 8px;
+  padding: 12px;
 }
 
 .term-group,
 .sentence-group-card {
   display: grid;
-  grid-template-columns: minmax(120px, 0.22fr) minmax(0, 1fr);
-  gap: 20px;
+  grid-template-columns: minmax(115px, 0.21fr) minmax(0, 1fr);
+  gap: 16px;
   background: var(--panel);
 }
 
@@ -242,9 +246,9 @@ main {
 .sentence-group-header {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
   border-right: 1px solid var(--line);
-  padding-right: 20px;
+  padding-right: 16px;
 }
 
 .term-renderings {
@@ -256,22 +260,22 @@ main {
   display: grid;
   align-items: start;
   border-top: 1px solid var(--line);
-  padding: 13px 0;
+  padding: 10px 0;
 }
 
 .sentence-row {
   display: grid;
   grid-template-columns: minmax(220px, 1fr) minmax(220px, 1fr) minmax(150px, 0.34fr);
-  gap: 16px;
+  gap: 13px;
   align-items: start;
 }
 
 .sentence-group-card {
-  grid-template-columns: minmax(170px, 0.27fr) minmax(0, 1fr);
+  grid-template-columns: minmax(150px, 0.25fr) minmax(0, 1fr);
 }
 
 .sentence-group-card + .sentence-group-card {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .sentence-group-header {
@@ -290,7 +294,7 @@ main {
 
 .sentence-pattern {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.45;
   letter-spacing: 0;
 }
@@ -306,7 +310,7 @@ main {
 
 .sentence-group-meta strong {
   color: var(--ink);
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .sentence-examples {
@@ -316,7 +320,7 @@ main {
 
 .sentence-example {
   border-bottom: 1px solid var(--line);
-  padding: 17px 0;
+  padding: 12px 0;
 }
 
 .sentence-example:first-child {
@@ -326,40 +330,40 @@ main {
 
 .sentence-group-actions {
   border-top: 1px solid var(--line);
-  padding: 12px 0 0;
+  padding: 9px 0 0;
 }
 
 .label {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   color: var(--muted);
   font-size: 12px;
   font-weight: 700;
 }
 
 .original {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 1.55;
+  line-height: 1.5;
 }
 
 .yasashii {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 1.58;
+  line-height: 1.52;
 }
 
 .sentence-text {
-  line-height: 1.72;
+  line-height: 1.62;
 }
 
 .meta {
   color: var(--muted);
   font-size: 12px;
-  line-height: 1.8;
+  line-height: 1.65;
 }
 
 .yasashii + .meta {
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .headword-stats {
@@ -374,7 +378,7 @@ main {
 .result-header {
   margin: 0;
   border-top: 0;
-  padding: 0 0 8px;
+  padding: 0 0 6px;
   color: var(--muted);
   font-size: 12px;
 }
@@ -384,7 +388,7 @@ main {
   margin: 0 4px 4px 0;
   border-radius: 3px;
   background: #e9efed;
-  padding: 2px 7px;
+  padding: 1px 6px 2px;
   white-space: nowrap;
   color: var(--muted);
 }
@@ -403,9 +407,9 @@ main {
   border: 1px dashed var(--line);
   border-radius: var(--radius);
   background: var(--panel);
-  padding: 28px;
+  padding: 22px;
   color: var(--muted);
-  line-height: 1.8;
+  line-height: 1.65;
 }
 
 a {

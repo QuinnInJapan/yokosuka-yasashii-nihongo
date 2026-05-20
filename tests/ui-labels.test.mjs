@@ -41,7 +41,8 @@ test("results pane scrolls instead of sticky search panel", async () => {
   assert.match(styles, /#app\s*{\s*height:\s*100%/s);
   assert.match(styles, /body\s*{[^}]*overflow:\s*hidden/s);
   assert.match(styles, /\.results-stack\s*{[^}]*overflow:\s*auto/s);
-  assert.match(styles, /\.results-stack\s*{[^}]*border-top:\s*3px solid var\(--line-strong\)/s);
+  assert.match(styles, /main\s*{[^}]*grid-template-columns:\s*280px minmax\(0, 1fr\)/s);
+  assert.match(styles, /\.results-stack\s*{[^}]*border-left:\s*3px solid var\(--line-strong\)/s);
   assert.equal(styles.includes("border-top: 3px solid var(--accent)"), false);
   assert.match(styles, /scroll-margin-top:\s*16px/);
 });
@@ -49,5 +50,16 @@ test("results pane scrolls instead of sticky search panel", async () => {
 test("section headings use a short marker instead of a full-width rule", async () => {
   const styles = await readFile("src/styles.css", "utf8");
   assert.equal(styles.includes(".section-title {\n  border-top"), false);
-  assert.match(styles, /\.section-title::before\s*{[^}]*width:\s*38px/s);
+  assert.match(styles, /\.section-title::before\s*{[^}]*width:\s*32px/s);
+});
+
+test("search interface stays compact in lower-resolution viewports", async () => {
+  const styles = await readFile("src/styles.css", "utf8");
+  const appSource = await readFile("src/App.tsx", "utf8");
+  assert.match(styles, /:root\s*{[^}]*font-size:\s*14px/s);
+  assert.match(styles, /\.app\s*{[^}]*padding:\s*18px 22px/s);
+  assert.match(styles, /\.search-panel\s*{[^}]*padding:\s*12px/s);
+  assert.match(styles, /\.query\s*{[^}]*font-size:\s*16px/s);
+  assert.match(styles, /\.query\s*{[^}]*padding:\s*8px 11px/s);
+  assert.match(appSource, /<aside className="search-panel"/);
 });
