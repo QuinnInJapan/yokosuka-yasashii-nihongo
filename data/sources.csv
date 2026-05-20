@@ -1,0 +1,20 @@
+source_id,source_org,source_document,source_url,source_date,source_category,source_description,source_short_name,source_vocab_standard,source_notes
+01,出入国在留管理庁・文化庁,在留支援のためのやさしい日本語ガイドライン 別冊書き換え例,https://www.bunka.go.jp/seisaku/kokugo_nihongo/kyoiku/pdf/92484001_02.pdf,2020,行政,在留外国人向け行政文書の書き換え例（国の指針）,入管庁GL書き換え例,旧JLPT 3・4級相当,国のやさしい日本語指針に基づく書き換え例集
+02,出入国在留管理庁,やさしい日本語書き換えツール 語彙データ,https://www.moj.go.jp/isa/support/portal/plainjapanese_kakikaerei.html,2020,行政,入管庁やさしい日本語書き換えツールの語彙データ,入管庁書き換えツール,,書き換えツール用データ；文脈情報なし
+03,弘前大学,災害基礎語彙集成（地震100語・大雨洪水土砂災害100語）,https://web.archive.org/web/20191127/http://human.cc.hirosaki-u.ac.jp/kokugo/EJ100go-top.html,2013,学術,災害時の基礎語彙100語×2セット,弘前大災害語彙,旧JLPT 3・4級,災害語彙に特化（地震100語＋水害100語）
+04,鳥取県,防災ハンドブック,http://www.torisakyu.or.jp/user/filer_public/35/42/35421010-5ff4-469b-8d79-8af7c8964798/bosaihandbook2023_single_high_202411_light.pdf,2023,行政,外国人住民向け防災ハンドブック,鳥取県防災HB,,防災に特化
+05,川崎市,やさしい日本語ガイドライン 第2版,https://www.city.kawasaki.jp/250/cmsfiles/contents/0000127/127357/pdf1_yasasihi2023.pdf,2023,行政,市職員向けやさしい日本語ガイドライン,川崎市GL,,
+06,札幌市,やさしい日本語ガイドライン,https://www.city.sapporo.jp/kokusai/documents/yasasiinihongo-guideline202502.pdf,2025,行政,市職員向けやさしい日本語ガイドライン,札幌市GL,,
+07,福岡市,使ってみよう やさしい日本語 用語集,https://www.city.fukuoka.lg.jp/soki/kokusai/shisei/japanese/documents/yougosyuu.pdf,,行政,市の窓口用語のやさしい日本語用語集,福岡市用語集,,
+08,三重県,やさしい日本語ガイドライン,https://www.pref.mie.lg.jp/common/content/001173183.pdf,2025,行政,県職員向けやさしい日本語ガイドライン,三重県GL,,
+10,大阪市,防災やさしい日本語（地震が来たとき・台風が来たとき）,https://www.city.osaka.lg.jp/kikikanrishitsu/cmsfiles/contents/0000350/350870/22.02.22jishin_kitatoki.pdf,2022,行政,外国人住民向け防災やさしい日本語（地震・台風）,大阪市防災,,防災に特化（地震・台風）
+12,横浜市,やさしい日本語で伝える 語彙集,https://www.city.yokohama.lg.jp/lang/residents/ej/daiji/kijun.files/goisyu202403.xlsx,2024,行政,市の広報・窓口向け語彙集,横浜市語彙集,,
+13,大阪府,やさしい日本語を使いましょう,https://www.pref.osaka.lg.jp/documents/11368/1-40.pdf,,行政,府職員向けやさしい日本語の手引き,大阪府手引き,,
+14,愛知県,やさしい日本語の手引き,https://www.pref.aichi.jp/uploaded/attachment/431191.pdf,,行政,県職員向けやさしい日本語の手引き,愛知県手引き,,
+17,岡山県,やさしい日本語の手引き,https://www.pref.okayama.jp/uploaded/attachment/195891.pdf,,行政,県職員向けやさしい日本語の手引き,岡山県手引き,,岡山弁→やさしい日本語の変換も含む
+18,京都市,分かりやすく伝えるための手引き,https://www.city.kyoto.lg.jp/hokenfukushi/cmsfiles/contents/0000235/235459/tebiki.pdf,,行政,市職員向け情報伝達の手引き,京都市手引き,,やさしい日本語に限らず「分かりやすい日本語」全般を対象
+19,入間市,やさしいにほんご いいかえひょう,https://www.city.iruma.saitama.jp/material/files/group/15/yasanichiiikae.pdf,,行政,市の窓口用いいかえ表,入間市いいかえ,,
+21,自治体国際化協会（CLAIR）,多言語災害情報文例集（やさしい日本語版）,https://www.clair.or.jp/j/multiculture/tagengo/saigai.html,,行政,多言語災害情報のやさしい日本語文例集,CLAIR災害文例,,災害時の定型文例が中心
+22,厚生労働省,外国人向けハローワーク利用案内（やさしい日本語版）,https://www.mhlw.go.jp/content/11655000/001100548.pdf,2020,行政,ハローワーク利用案内のやさしい日本語版,厚労省HW案内,,ハローワーク業務に特化
+23,愛媛大学,MATCHA やさしい日本語パラレルコーパス,https://github.com/EhimeNLP/matcha,2024,学術,専門家が平易化した旅行・文化記事のパラレルコーパス（16000文対）,MATCHA,JLPT N4,旅行・文化記事の平易化；専門ライターが作成
+26,奈良先端科学技術大学院大学,JADES やさしい日本語データセット,https://aclanthology.org/2022.tsar-1.17/,2022,学術,ニュース記事を専門家が平易化した3907文対データセット,JADES,旧JLPT 3・4級,専門家1名が作成；語彙＋文法の平易化；翻訳調の原文

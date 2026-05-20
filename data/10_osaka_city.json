@@ -1,0 +1,72 @@
+[
+  {
+    "source_id": "10",
+    "source_org": "大阪市",
+    "source_document": "防災やさしい日本語",
+    "source_date": "2022",
+    "domain": "防災",
+    "entry_type": "term",
+    "original": "津波",
+    "original_normalized": "津波",
+    "yasashii": "津波（大きな波）",
+    "notes": "用語解説",
+    "retain_original": true,
+    "is_negative_example": false
+  },
+  {
+    "source_id": "10",
+    "source_org": "大阪市",
+    "source_document": "防災やさしい日本語",
+    "source_date": "2022",
+    "domain": "防災",
+    "entry_type": "term",
+    "original": "避難場所",
+    "original_normalized": "避難場所",
+    "yasashii": "避難場所（逃げるところ）",
+    "notes": "用語解説",
+    "retain_original": true,
+    "is_negative_example": false
+  },
+  {
+    "source_id": "10",
+    "source_org": "大阪市",
+    "source_document": "防災やさしい日本語",
+    "source_date": "2022",
+    "domain": "防災",
+    "entry_type": "term",
+    "original": "避難所",
+    "original_normalized": "避難所",
+    "yasashii": "避難所（逃げるところ）",
+    "notes": "用語解説",
+    "retain_original": true,
+    "is_negative_example": false
+  },
+  {
+    "source_id": "10",
+    "source_org": "大阪市",
+    "source_document": "防災やさしい日本語",
+    "source_date": "2022",
+    "domain": "防災",
+    "entry_type": "term",
+    "original": "広域避難場所",
+    "original_normalized": "広域避難場所",
+    "yasashii": "広域避難場所（大きな火事から逃げるところ）",
+    "notes": "用語解説",
+    "retain_original": true,
+    "is_negative_example": false
+  },
+  {
+    "source_id": "10",
+    "source_org": "大阪市",
+    "source_document": "防災やさしい日本語",
+    "source_date": "2022",
+    "domain": "防災",
+    "entry_type": "term",
+    "original": "懐中電灯",
+    "original_normalized": "懐中電灯",
+    "yasashii": "懐中電灯（電池で光るライト）",
+    "notes": "用語解説",
+    "retain_original": true,
+    "is_negative_example": false
+  }
+]

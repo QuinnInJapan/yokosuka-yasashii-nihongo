@@ -1,0 +1,132 @@
+Create a presentation in Japanese about「やさしい日本語 前例リファレンス」— an Excel-based reference tool that helps municipal government (市役所) staff rewrite documents into やさしい日本語 (plain Japanese) by looking up how other governments and researchers have handled the same words and sentences.
+
+You have full creative freedom over structure, slide count, visuals, and flow. Reorganize, merge, or split topics as you see fit. The information below is the raw content — use what's useful, cut what's redundant, and present it in whatever way is most compelling.
+
+Tone/vibe: trustworthy, calm, practical. The audience is busy 市役所 staff who are skeptical of new tools. Think clean government report meets modern infographic — not flashy startup, not dry bureaucracy.
+
+Color palette (matches the Excel tool — keep the presentation consistent with these):
+- Primary green: #3B7A28 — used for headers, key labels, and the brand identity throughout the sheet
+- Dark green: #2A571C — used sparingly for emphasis
+- Backgrounds: white with alternating pale green rows (#EDF5EB) for readability
+- Body text: near-black #333333, secondary text #666666
+- Search input highlight: warm yellow #FFF2CC with gold border #BF8F00
+- Difficulty color coding (semantic, not decorative):
+  - "Very difficult" (とても難しい): soft red bg #F8D7DA, dark red text #842029
+  - "Somewhat difficult" (やや難しい): warm yellow bg #FFF3CD, dark gold text #664D03
+  - "Difficult" (難しい): soft orange bg #FCE4D6, burnt orange text #984C0C
+  - "Normal" (ふつう): soft green bg #D1E7DD, dark green text #0F5132
+  - "Easy" (やさしい): soft blue bg #CFE2FF, dark blue text #084298
+- Recommendation color coding:
+  - "Almost always rewritten": soft red bg #F8D7DA, #842029 (signals: attention, you should probably rewrite)
+  - "Majority rewritten": warm yellow bg #FFF3CD, #664D03
+  - "Sometimes rewritten": soft green bg #D1E7DD, #0F5132
+  - "Usually kept as-is": soft blue bg #CFE2FF, #084298 (signals: calm, probably fine)
+- Source-count trust gradient (more sources = stronger green):
+  - 5+ sources: #D1E7DD
+  - 4 sources: #DFF0D8
+  - 3 sources: #EAF4E7
+  - 2 sources: #F2F8F0
+- Links: standard blue #0563C1 with underline
+- Tab headers use color-coded backgrounds: green #3B7A28 (search), gold #A67A00 (terms), blue #1F4E8C (sentences), teal #1A6298, purple #5E3B7E
+
+---
+
+## Background
+
+やさしい日本語 ("easy Japanese") is simplified Japanese used to communicate with foreign residents, elderly people, and others who struggle with standard administrative language. Many municipalities are adopting it, but staff find the rewriting process difficult because:
+
+- There's no single correct answer — the same word can be rewritten differently depending on context and audience
+- Debates over whether/how to rewrite a term eat up meeting time
+- Different departments in the same city hall rewrite the same words differently
+- Staff can't explain *why* they chose a particular rewriting — there's no evidence to point to
+
+## What the tool does
+
+It collects precedents: real rewriting examples from 19 government bodies and academic institutions across Japan. Staff type a word into an Excel sheet and instantly see:
+
+- JLPT difficulty level (N1–N5)
+- A recommendation based on how often that word gets rewritten across all sources (e.g., "almost always rewritten" / "usually kept as-is")
+- Specific term-level rewriting examples with source attribution
+- Sentence-level before/after examples
+
+The approach is: ① collect rewriting examples from published sources → ② organize into a searchable database with auto-calculated difficulty and rewrite rates → ③ make it available in a single Excel file, no installation needed.
+
+Key message: this tool doesn't replace human judgment — it provides the evidence to support it.
+
+## Data sources
+
+The tool draws on 3 categories of data. The audience likely doesn't know what a "corpus" is, so this needs a brief, accessible explanation:
+
+A corpus (コーパス) is a large, systematically collected body of text used for language research. This tool uses parallel corpora — paired collections of original text and its やさしい日本語 rewrite.
+
+**行政ガイドライン (Government guidelines)**
+- Created by: staff at municipalities and national agencies
+- Content: term-level rewriting examples (e.g., 避難 → にげる)
+- Scale: 17 institutions, 2,800+ term pairs
+- Key trait: based on official administrative judgment
+
+**MATCHA コーパス (MATCHA corpus)**
+- Created by: Ehime University + professional writers at MATCHA (a travel media company)
+- Content: sentence-level rewrites of travel/culture articles
+- Scale: 14,700+ sentence pairs
+- Key trait: written by professional writers for real readers
+
+**JADES データセット (JADES dataset)**
+- Created by: a single expert at NAIST (Nara Institute of Science and Technology)
+- Content: sentence-level rewrites of news articles
+- Scale: 3,900+ sentence pairs
+- Key trait: simplifies both vocabulary and grammar
+
+## Data scale (headline numbers)
+
+- 19 sources (government + academic)
+- 2,800+ term pairs
+- 18,800+ sentence pairs
+- 22,000+ JLPT vocabulary entries (used for difficulty ratings)
+
+## How search works
+
+Example: user types「避難」
+- Difficulty: N2
+- Recommendation: ほぼいつも言い換えられている (almost always rewritten)
+- Term hits: 8 matches
+- Sentence hits: 24 matches
+- Top term result: 避難 → にげる — found in 5 sources (入管庁, 川崎市, 札幌市…)
+
+## How sentence examples work
+
+Two example pairs:
+- 地震が発生した場合は、速やかに避難してください。→ 地震が　おきたら、すぐ　にげて　ください。
+- 本届出は、転入の届出と同時にすることができます。→ この届出は、引っ越しの届出と一緒に出すことができます。
+
+## How the recommendation system works
+
+Based on rewrite rate = (times rewritten in sentence examples) ÷ (total sentence examples containing the word):
+- 80%+ → ほぼいつも言い換えられている
+- 50–79% → 過半数で言い換えられている
+- 20–49% → たまに言い換えられている
+- Below 20% → 大体そのまま使われている
+
+Important caveat: the recommendation is reference information only. Final decisions are made by staff based on context.
+
+## Source credibility
+
+17 government sources: 出入国在留管理庁・文化庁、厚生労働省、自治体国際化協会、川崎市、横浜市、札幌市、福岡市、大阪市、大阪府、京都市、愛知県、三重県、鳥取県、岡山県、入間市
+
+3 academic sources: 弘前大学（災害基礎語彙集成）、愛媛大学（MATCHAパラレルコーパス）、奈良先端科学技術大学院大学（JADESデータセット）
+
+Key insight: when multiple independent sources adopt the same rewriting, consensus is high → reliability is high.
+
+## Benefits
+
+- Faster decisions — look up precedents instantly instead of debating from scratch
+- Defensible choices — "Kawasaki, Sapporo, and 3 other cities use the same rewriting"
+- Consistency — different departments can reference the same data
+- Evidence-based — decisions grounded in actual rewrite rates, not intuition
+
+## Getting started
+
+1. Open the Excel file (やさしい日本語_前例リファレンス.xlsx) — no installation needed
+2. Type a word in the search tab
+3. Review precedents and make your decision
+4. Share feedback on what's useful or what could improve
